@@ -1,0 +1,7 @@
+~this text file does not interact with the program, it just gives me valid log in credentials (as they cant be viewed from the csv file as passwords are hashed)
+Username: Admin
+Password: P&55word
+
+secondary user details:
+Username: User
+Password: P%55word

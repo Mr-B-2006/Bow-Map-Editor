@@ -1,0 +1,18 @@
+~std::cin.ignore()
+
+~User_details[details::Username].find(",") != std::string::npos
+i previously did: User_details[details::Username].find(",")
+lead to integer overflow and undefined behaviour (when condition wasnt true, would return large number and thus would make condition true)
+if needed, look up why User_details[details::Username].find(",") != std::string::npos works
+
+~when taking user input as an integer, when string values were entered an infinite loop occured, to fix this, i took input as a string using std::getline
+fixed with: 
+if (!(std::cin >> inp)) //handles erroneous string data being inputted
+        {
+            std::cin.clear();
+            std::cin.ignore();
+        }
+
+~due to encoding issues, "£" would not display, I was not able to fix this, thus i ommitted the "£" sign from being entered
+
+~
